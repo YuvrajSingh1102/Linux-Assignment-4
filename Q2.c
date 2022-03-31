@@ -18,6 +18,7 @@ void *PrintHello(void *threadobj)
 {
 	pthread_t thread_ID;
 	struct my_thread *t1;
+	
 	t1 = (struct my_thread *) threadobj;
 	thread_ID = pthread_self();
 	printf("\nThread Id : %u\n",thread_ID);
@@ -28,6 +29,7 @@ int main()
 {
 	pthread_t thread2,thread3,thread4,thread_ID;
 	int rc;
+	
 	struct my_thread t2,t3,t4;
 	t4.thread_id = 4;
 	strcpy(t4.message,"I am forth thread\n");
