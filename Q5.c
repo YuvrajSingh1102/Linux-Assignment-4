@@ -59,6 +59,7 @@ int main()
 	}
 
 	printf("Waiting...\n");
+	
 	rc = pthread_join(thread,NULL);
 	printf("main complete\n");
     
