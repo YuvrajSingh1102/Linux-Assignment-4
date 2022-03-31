@@ -24,7 +24,7 @@ int main()
 {
 
 	pthread_t thread, thread1;
-    printf("====Start of main program====");
+    	printf("====Start of main program====");
 	pthread_create(&thread,NULL,mythread,(void *)"Thread function called 1st time");
 	pthread_create(&thread1,NULL,mythread,(void *)"Thread function called 2nd time");
 
@@ -32,7 +32,7 @@ int main()
 	pthread_join(thread,NULL);
 	pthread_join(thread1,NULL);
 	printf("\nEnd of program\n");
-    printf("====End of the main program====\n");
+    	printf("====End of the main program====\n");
 
     return 0;
 }
